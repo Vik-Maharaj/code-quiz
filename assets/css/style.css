@@ -9,11 +9,12 @@ body {
   background-color: blue;
 }
 
-.start_btn, .info_box, .quiz_box {
+.start_btn, .info_box, .quiz_box, .result_box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 8px 0 black;
 }
 
 .start_btn button {
@@ -219,10 +220,48 @@ footer .next_btn:hover {
   background: pink;
 }
 
+.result_box {
+  background: white;
+  width: 450px;
+  padding: 25px 30px;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.result_box .complete_text {
+  font-size: 20px;
+  font-weight: 500;
+}
 
+.result_box .score_text {
+  display: flex;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
 
+.result_box .buttons {
+  display: flex;
+  margin: 20px 0;
+}
 
+.result_box .buttons button {
+  margin: 0 10px;
+  height: 45px;
+  padding: 0 20px;
+  border:  none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid blue;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
 
 
 @media (max-width: 690px) {
