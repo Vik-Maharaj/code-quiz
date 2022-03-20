@@ -193,6 +193,25 @@ body {
   transition: all 0.2s ease;
 }
 
+
+.quiz_box section .option_list .option.correct {
+  /* color: rgb(137, 243, 137); */
+  background: rgb(64, 245, 64);
+  border-color: rgb(33, 255, 25);
+}
+
+.quiz_box section .option_list .option.incorrect {
+  /* color: rgb(137, 243, 137); */
+  background: rgb(235, 55, 55);
+  border-color: rgb(250, 9, 9);
+}
+
+
+.quiz_box section .option_list .option.disabled {
+  pointer-events: none;
+}
+
+
 .quiz_box section .option_list .option:hover {
   color: blue;
   background: gray;
