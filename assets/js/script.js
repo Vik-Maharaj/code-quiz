@@ -10,6 +10,7 @@ const next_btn = document.querySelector(".next_btn");
 const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
+// var yourScore = (userScore * 100);
 
 
 // questions and answers section
@@ -180,12 +181,17 @@ function optionSelected(answer) {
 }
 
 
+// function yourTotalScore(userScore) {
+//     yourScore = userScore * 100;
+// }
+
 
 function showResultBox() {
     info_box.classList.remove("active");
     quiz_box.classList.remove("active");
     result_box.classList.add("active");
     console.log("show result box")
+    console.log(userScore * 100);
     // const scoreText = result_box.querySelector(".score_text");
     // if (userScore > 3) {
     //     let scoreTag = '<div class="score_text">Other text</div>';
@@ -204,6 +210,7 @@ function startTimer(time) {
         if (time < 0) {
             clearInterval(counter);
             timeCount.textContent = "0";
+            showResultBox();
         }
     }
 }   
@@ -212,7 +219,7 @@ function startTimer(time) {
 
 function questionCounter(index) {
     const bottom_question_counter = quiz_box.querySelector(".total_questions");
-    let totalQuestionsCountTag = '<p>' + index + ' Sample Bottom Text ' + questions.length + '</p>';
+    let totalQuestionsCountTag = '<p> Your current score is ' + userScore * 100 + '</p>';
     bottom_question_counter.innerHTML = totalQuestionsCountTag;
 }
 
@@ -221,6 +228,9 @@ function questionCounter(index) {
 quit_quiz.onclick = function() {
     window.location.reload();
 }
+
+
+
 
 
 
