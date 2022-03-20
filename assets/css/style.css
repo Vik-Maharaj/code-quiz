@@ -17,7 +17,7 @@ body {
   box-shadow: 0px 4px 8px 0 black;
 }
 
-.info_box.active, .quiz_box.active {
+.info_box.active, .quiz_box.active, .result_box.active {
   /* z-index: 5;
   opacity: 1;
   pointer-events: auto;
@@ -263,10 +263,19 @@ footer .next_btn:hover {
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  opacity: 0;
+  display: none;
+  /* opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.7);
+  transform: translate(-50%, -50%) scale(0.7); */
 }
+
+
+/* .result_box.active {
+  opacity: 100; */
+  /* pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.7); */
+/* } */
+
 
 .result_box .complete_text {
   font-size: 20px;

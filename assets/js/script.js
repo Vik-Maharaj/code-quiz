@@ -6,6 +6,10 @@ var continue_btn = document.querySelector(".buttons .restart");
 var quiz_box = document.querySelector(".quiz_box");
 const option_list = document.querySelector(".option_list");
 const timeCount = quiz_box.querySelector(".timer .timer_sec");
+const next_btn = document.querySelector(".next_btn");
+const result_box = document.querySelector(".result_box");
+const restart_quiz = result_box.querySelector(".buttons .restart");
+const quit_quiz = result_box.querySelector(".buttons .quit");
 
 
 // questions and answers section
@@ -100,10 +104,16 @@ continue_btn.onclick = function() {
 let question_count = 0;
 let question_number = 1;
 let counter;
-let timeValue = 75;
+// let timeValue = 75;
+let userScore = 0;
 
 
-const next_btn = document.querySelector(".next_btn");
+
+
+
+
+
+
 
 
 // when NEXT button clicked
@@ -118,6 +128,7 @@ next_btn.onclick = function() {
     }
     else {
         console.log("Questions completed");
+        showResultBox();
     }
 }
 
@@ -147,6 +158,8 @@ function optionSelected(answer) {
     let correctAnswer = questions[question_count].answer;
     let allOptions = option_list.children.length;
     if (userAnswer == correctAnswer) {
+        userScore += 1;
+        console.log(userScore);
         answer.classList.add("correct");
         console.log("Answer is correct");
     }
@@ -165,6 +178,21 @@ function optionSelected(answer) {
         option_list.children[i].classList.add("disabled");
     }
 }
+
+
+
+function showResultBox() {
+    info_box.classList.remove("active");
+    quiz_box.classList.remove("active");
+    result_box.classList.add("active");
+    console.log("show result box")
+    // const scoreText = result_box.querySelector(".score_text");
+    // if (userScore > 3) {
+    //     let scoreTag = '<div class="score_text">Other text</div>';
+    //     scoreText.innerHTML = scoreTag;
+    // }
+}
+
 
 
 
@@ -190,7 +218,9 @@ function questionCounter(index) {
 
 
 
-
+quit_quiz.onclick = function() {
+    window.location.reload();
+}
 
 
 
