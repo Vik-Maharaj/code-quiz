@@ -5,6 +5,7 @@ var exit_btn = document.querySelector(".buttons .quit");
 var continue_btn = document.querySelector(".buttons .restart");
 var quiz_box = document.querySelector(".quiz_box");
 const option_list = document.querySelector(".option_list");
+const timeCount = quiz_box.querySelector(".timer .timer_sec");
 
 
 // questions and answers section
@@ -92,11 +93,14 @@ continue_btn.onclick = function() {
     quiz_box.classList.add("active");
     showQuestions(0);
     questionCounter(1);
+    startTimer(75);
 }
 
 
 let question_count = 0;
 let question_number = 1;
+let counter;
+let timeValue = 75;
 
 
 const next_btn = document.querySelector(".next_btn");
@@ -109,6 +113,8 @@ next_btn.onclick = function() {
         question_number++;
         showQuestions(question_count);
         questionCounter(question_number);
+        // clearInterval(counter);
+        // startTimer(timeValue);
     }
     else {
         console.log("Questions completed");
@@ -162,7 +168,17 @@ function optionSelected(answer) {
 
 
 
-    
+function startTimer(time) {
+    counter = setInterval(timer, 1000);
+    function timer() {
+        timeCount.textContent = time;
+        time--;
+        if (time < 0) {
+            clearInterval(counter);
+            timeCount.textContent = "0";
+        }
+    }
+}   
 
 
 
