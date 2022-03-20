@@ -10,63 +10,63 @@ var quiz_box = document.querySelector(".quiz_box");
 let questions = [
     {
         number: 1,
-        question: "What does HTML stand for?",
-        answer: "Hyper Text Markup Language",
-        options: ["Hyper Text Preprocessor", "Hyper Text Markup Language", "Hyper Text Multiple Language", "Hyper Tool Multi Language"]
+        question: "Which company created JavaScript?",
+        answer: "Netscape",
+        options: ["Microsoft", "Sun Microsystems", "Oracle", "Netscape"]
     },
     {
         number: 2,
-        question: "What does CSS stand for?",
-        answer: "Cascading Style Sheet",
-        options: ["Common Style Sheet", "Colorful Style Sheet", "Computer Style Sheet", "Cascading Style Sheet"]
+        question: "Who wrote JavaScript?",
+        answer: "Brendan Eich",
+        options: ["Brendan Eich", "Bill Gates", "Steve Jobs", "Marc Benioff"]
     },
     {
         number: 3,
-        question: "AAAAAAAAAAAAAAAAAAAAAA?",
-        answer: "AAAAAAAAAAAAAAAAAAAAAA",
-        options: ["AAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAA"]
+        question: "What was the orignal name for JavaScript?",
+        answer: "Mocha",
+        options: ["Latte", "Mocha", "CScript", "BBscript"]
     },
     {
         number: 4,
-        question: "BBBBBBBBBBBBBBBBBBBBB?",
-        answer: "BBBBBBBBBBBBBBBBBBBBB",
-        options: ["BBBBBBBBBBBBBBBBBBBBB", "BBBBBBBBBBBBBBBBBBBBB", "BBBBBBBBBBBBBBBBBBBBB", "BBBBBBBBBBBBBBBBBBBBB"]
+        question: "How long did it take to write the orignal JavaScript?",
+        answer: "10 days",
+        options: ["10 days", "2 weeks", "2 months", "10 months"]
     },
     {
         number: 5,
-        question: "CCCCCCCCCCCCCCCCCCCCC?",
-        answer: "CCCCCCCCCCCCCCCCCCCCC",
-        options: ["CCCCCCCCCCCCCCCCCCCCC", "CCCCCCCCCCCCCCCCCCCCC", "CCCCCCCCCCCCCCCCCCCCC", "CCCCCCCCCCCCCCCCCCCCC"]
+        question: "JavaScript is a ____-side programming language?",
+        answer: "Both",
+        options: ["Client", "Server", "Both", "None"]
     },
     {
         number: 6,
-        question: "DDDDDDDDDDDDDDDDDDDDD?",
-        answer: "DDDDDDDDDDDDDDDDDDDDD",
-        options: ["DDDDDDDDDDDDDDDDDDDDD", "DDDDDDDDDDDDDDDDDDDDD", "DDDDDDDDDDDDDDDDDDDDD", "DDDDDDDDDDDDDDDDDDDDD"]
+        question: "Which of the following is NOT a reserved word in JavaScript?",
+        answer: "undefined",
+        options: ["default", "finally", "throw", "undefined"]
     },
     {
         number: 7,
-        question: "EEEEEEEEEEEEEEEEEEEEE?",
-        answer: "EEEEEEEEEEEEEEEEEEEEE",
-        options: ["EEEEEEEEEEEEEEEEEEEEE", "EEEEEEEEEEEEEEEEEEEEE", "EEEEEEEEEEEEEEEEEEEEE", "EEEEEEEEEEEEEEEEEEEEE"]
+        question: "Which JavaScript label catches all the values, except for the ones specified?",
+        answer: "default",
+        options: ["catch", "label", "try", "default"]
     },
     {
         number: 8,
-        question: "FFFFFFFFFFFFFFFFFFFFF?",
-        answer: "FFFFFFFFFFFFFFFFFFFFF",
-        options: ["FFFFFFFFFFFFFFFFFFFFF", "FFFFFFFFFFFFFFFFFFFFF", "FFFFFFFFFFFFFFFFFFFFF", "FFFFFFFFFFFFFFFFFFFFF"]
+        question: "Which of the following type of variable is visible only within a function where it is defined?",
+        answer: "local variable",
+        options: ["global variable", "local variable", "both of the above", "none of the above"]
     },
     {
         number: 9,
-        question: "GGGGGGGGGGGGGGGGGGGGG?",
-        answer: "GGGGGGGGGGGGGGGGGGGGG",
-        options: ["GGGGGGGGGGGGGGGGGGGGG", "GGGGGGGGGGGGGGGGGGGGG", "GGGGGGGGGGGGGGGGGGGGG", "GGGGGGGGGGGGGGGGGGGGG"]
+        question: "Which of the following function of a string object returns the calling string value converted to upper case while respecting the current locale?",
+        answer: "toLocaleUpperCase()",
+        options: ["toLocaleUpperCase()", "toUpperCase()", "toString()", "substring()"]
     },
     {
         number: 10,
-        question: "HHHHHHHHHHHHHHHHHHHHH?",
-        answer: "HHHHHHHHHHHHHHHHHHHHH",
-        options: ["HHHHHHHHHHHHHHHHHHHHH", "HHHHHHHHHHHHHHHHHHHHH", "HHHHHHHHHHHHHHHHHHHHH", "HHHHHHHHHHHHHHHHHHHHH"]
+        question: "Which of the following function of an array object removes the first element from an array and returns that element?",
+        answer: "shift()",
+        options: ["reverse()", "shift()", "slice()", "some()"]
     },
 ];
 
