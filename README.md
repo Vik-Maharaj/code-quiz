@@ -1,35 +1,18 @@
-# Vik's Code Quiz
+# Vik's JavaScript Code Quiz
 
 ## Description
 
-Intro Sentence - 
+JavaScript is important, very important, and as new students to the language attempt to learn it, it is helpful to utilize any resource at their disposal. With that in mind, the purpose of this project is to create a quiz app on JavaScript history and fundamentals. The timed web-based quiz can be taken by anyone online and the program includes the following features:
 
-Enter the purpose of this project:...
+- The quiz is entirely online and can be taken repeatedly
+- It is multiple choice and has several choices that displays the right or wrong answer depending on the user choice
+- Once the quiz begins a timer starts to count down from 75 seconds, and once the counter reaches 0, the quiz is over
+- Once a question is answered, the user is prompted to move to the next answer
+- The user earns 100 points for each answer and the point total is shown at the bottom of the window
+- Once the quiz is over the points are totaled and displayed to the user
+- The user can save their score along with their initials, while a list of high scores are displayed for comparison or inclusion (functionality coming soon)
 
-The achieve this goal, the following items were accomplished as part of the application: 
-
-- what was accomplished 01
-- what was accomplished 02...
-
-Ending sentence - 
-
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-
-
-
+This quiz, although a simple and straightforward resource, will hopefully provide some new information for anyone attempting to increase their JavaScript knowledge.
 
 Link to the deployed website: https://vik-maharaj.github.io/password-generator/
 
@@ -41,16 +24,14 @@ The repo contains an index.html file, and assets folder containing a CSS file sy
 
 ## Usage
 
-Using any desktop browser, open the above-mentioned link to view the webpage... and to generate your own unique password!
+Using any desktop browser, open the above-mentioned link to view the webpage... and to take the quiz!
 
-![Vik's Password Generator Screenshot](assets/images/screenshot.png)
+![Vik's JavaScript Quiz Screenshot](assets/images/screenshot.png)
 
 
 ## Credits
 
-Source code courtesy of © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-
-Other collaborators include the instructor, TAs, and fellow classmates of the UCF Coding Bootcamp (Spring 2022).
+Collaborators include the instructor, TAs, and fellow classmates of the UCF Coding Bootcamp (Spring 2022).
 
 
 ## License

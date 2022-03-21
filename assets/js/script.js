@@ -10,7 +10,7 @@ const next_btn = document.querySelector(".next_btn");
 const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
-// var yourScore = (userScore * 100);
+
 
 
 // questions and answers section
@@ -79,18 +79,17 @@ let questions = [
 
 
 
-
-
-
 // when START QUIZ button is clicked
 start_btn.onclick = function() {
     info_box.classList.add("active");
 }
 
+
 // when EXIT QUIZ button is clicked
 exit_btn.onclick = function() {
     info_box.classList.remove("active");
 }
+
 
 // when CONTINUE button is clicked
 continue_btn.onclick = function() {
@@ -102,17 +101,11 @@ continue_btn.onclick = function() {
 }
 
 
+// additional variables
 let question_count = 0;
 let question_number = 1;
 let counter;
-// let timeValue = 75;
 let userScore = 0;
-
-
-
-
-
-
 
 
 
@@ -153,7 +146,7 @@ function showQuestions(index) {
 }
 
 
-
+// calculates the right or wrong answer
 function optionSelected(answer) {
     let userAnswer = answer.textContent;
     let correctAnswer = questions[question_count].answer;
@@ -181,27 +174,23 @@ function optionSelected(answer) {
 }
 
 
-// function yourTotalScore(userScore) {
-//     yourScore = userScore * 100;
-// }
 
 
+// once all the questions are answered or time runs out
 function showResultBox() {
     info_box.classList.remove("active");
     quiz_box.classList.remove("active");
     result_box.classList.add("active");
     console.log("show result box")
     console.log(userScore * 100);
-    // const scoreText = result_box.querySelector(".score_text");
-    // if (userScore > 3) {
-    //     let scoreTag = '<div class="score_text">Other text</div>';
-    //     scoreText.innerHTML = scoreTag;
-    // }
+    const scoreText = result_box.querySelector(".score_text");
+    let scoreTag = '<div class="score_text"> Your final score is ' + userScore * 100 + ' points!</div>';
+    scoreText.innerHTML = scoreTag;
 }
 
 
 
-
+// for the countdown timer
 function startTimer(time) {
     counter = setInterval(timer, 1000);
     function timer() {
@@ -216,15 +205,16 @@ function startTimer(time) {
 }   
 
 
-
+// for displaying the point total
 function questionCounter(index) {
     const bottom_question_counter = quiz_box.querySelector(".total_questions");
-    let totalQuestionsCountTag = '<p> Your current score is ' + userScore * 100 + '</p>';
+    let totalQuestionsCountTag = '<p> Your current score is  ' + userScore * 100 + ' points</p>';
     bottom_question_counter.innerHTML = totalQuestionsCountTag;
 }
 
 
 
+// restarts the quiz
 quit_quiz.onclick = function() {
     window.location.reload();
 }
