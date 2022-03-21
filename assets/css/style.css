@@ -2,11 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
-  background-color: blue;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../images/Website_Background.jpg");
+
 }
 
 .start_btn, .info_box, .quiz_box, .result_box {
@@ -14,7 +19,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 4px 8px 0 black;
+  box-shadow: 0px 4px 8px 0 #494D5F;
 }
 
 .info_box.active, .quiz_box.active, .result_box.active {
@@ -24,25 +29,25 @@ body {
 .start_btn button {
   font-size: 25px;
   font-weight: bold;
-  color: blue;
+  color: #494D5F;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
-  background: rgb(228, 224, 224);
+  background: #f0f2f7;
   cursor: pointer;  
 }
 
 .info_box {
   display: none;
   width: 540px;
-  background: rgb(228, 224, 224);
+  background: #f0f2f7;
   border-radius: 5px;
 }
 
 .info_title {
   height: 60px; 
   width: 100%;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #494D5F;
   display: flex;
   align-items: center;
   padding: 0 35px;
@@ -65,42 +70,45 @@ body {
   align-items: center;
   justify-content: flex-end;
   padding: 0 35px;
-  border-top: 1px solid gray;
+  border-top: 1px solid #494D5F;
 }
 
 .buttons button {
+  font-family: 'Staatliches', sans-serif;
   margin: 0 5px;
   height: 40px;
   width: 100px;
-  border: 1px solid blue;
+  border: 1px solid #A0D2E8;
   border-radius: 5px;
-  color: white;
+  color: #f0f2f7;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
 }
 
 .buttons button.restart {
-  color: white;
-  background: blue;
+  color: #494D5F;
+  background: #A0D2E8;
 }
 
 .buttons button.restart:hover {
-  background: pink;
+  background: #D0BDF4;
+  box-shadow: -.5px 2px 5px 1px #494D5F;
 }
 
 .buttons button.quit {
-  color: blue;
+  color: #494D5F;
 }
 
 .buttons button.quit:hover {
-  background: pink;
+  background: #D0BDF4;
+  box-shadow: -.5px 2px 5px 1px #494D5F
 }
 
 .quiz_box {
   display: none;
   width: 550px;
-  background: white;
+  background: #f0f2f7;
   border-radius: 5px;
 }
 
@@ -109,12 +117,12 @@ body {
   height: 70px;
   position: relative;
   padding: 0 30px;
-  background: white;
+  background: #f0f2f7;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 5px 5px 0 0;
-  box-shadow: 0px 3px 5px 1px black;
+  box-shadow: 0px 3px 5px 1px #494D5F;
 }
 
 .quiz_box header .title {
@@ -128,8 +136,8 @@ body {
   justify-content: space-between;
   width: 145px;
   height: 45px;
-  background: white;
-  border: 1px solid blue;
+  background: #f0f2f7;
+  border: 1px solid #A0D2E8;
   border-radius: 5px;
   padding: 0 8px;
 }
@@ -144,20 +152,20 @@ body {
 .quiz_box header .timer .timer_sec {
   font-size: 18px;
   font-weight: 500;
-  background: gray;
+  background: #494D5F;
   height: 30px;
   width: 45px;
-  color: white;
+  color: #f0f2f7;
   text-align: center;
   line-height: 30px;
   border-radius: 5px;
-  border: 1px solid black;
+  border: 1px solid #494D5F;
   user-select: none;
 }
 
 .quiz_box section {
   padding: 25px 30px 20px 30px;
-  background: white;
+  background: #f0f2f7;
 }
 
 .quiz_box section .question_text {
@@ -171,8 +179,8 @@ body {
 }
 
 .quiz_box section .option_list .option {
-  background: rgb(144, 218, 253);
-  border: 1px solid blue;
+  background: #93d5f1;
+  border: 1px solid #A0D2E8;
   border-radius: 5px;
   padding: 8px 15px;
   margin-bottom: 15px;
@@ -201,9 +209,10 @@ body {
 
 
 .quiz_box section .option_list .option:hover {
-  color: blue;
-  background: gray;
-  border-color: gray;
+  color: #A0D2E8;
+  background: #494D5F;
+  border-color: #494D5F;
+  box-shadow: -.5px 2px 5px 1px #494D5F
 }
 
 .quiz_box footer {
@@ -222,27 +231,29 @@ body {
 }
 
 footer .next_btn {
+  font-family: 'Staatliches', sans-serif;
   height: 40px;
-  padding: 0 13px 2px;
+  padding: 0 13px 0px;
   margin: 0 0 10px;
   font-size: 18px;
   font-weight: 400;
   border: none;
   outline: none;
-  color: white;
-  background: blue;
+  color: #494D5F;
+  background: #A0D2E8;
   border-radius: 5px;
-  border: 1px solid blue;
+  border: 1px solid #A0D2E8;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 footer .next_btn:hover {
-  background: pink;
+  background: #D0BDF4;
+  box-shadow: -.5px 2px 5px 1px #494D5F
 }
 
 .result_box {
-  background: white;
+  background: #f0f2f7;
   width: 450px;
   padding: 25px 30px;
   border-radius: 5px;
@@ -281,7 +292,7 @@ footer .next_btn:hover {
   font-size: 18px;
   font-weight: 500;
   border-radius: 5px;
-  border: 1px solid blue;
+  border: 1px solid #A0D2E8;
   cursor: pointer;
   transition: all 0.2s ease;
 }
