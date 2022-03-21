@@ -184,7 +184,7 @@ function showResultBox() {
     console.log("show result box")
     console.log(userScore * 100);
     const scoreText = result_box.querySelector(".score_text");
-    let scoreTag = '<div class="score_text"> Your final score is ' + userScore * 100 + ' points!</div>';
+    let scoreTag = '<div class="score_text"> Your final score is ' + userScore * 100 + ' points</div>';
     scoreText.innerHTML = scoreTag;
 }
 

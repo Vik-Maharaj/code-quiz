@@ -267,19 +267,24 @@ footer .next_btn:hover {
 
 
 .result_box .complete_text {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
+  font-style: italic;
+  margin: 10px;
 }
 
 .result_box .score_text {
-  display: flex;
+  /* display: flex; */
+  text-align: center;
   margin: 10px 0;
   font-size: 18px;
   font-weight: 500;
 }
 
 .result_box .buttons {
-  display: flex;
+  display: block;
+  align-items: center;
+  padding: 20px 10px;
   margin: 20px 0;
 }
 
