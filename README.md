@@ -14,7 +14,7 @@ JavaScript is important, very important, and as new students to the language att
 
 This quiz, although a simple and straightforward resource, will hopefully provide some new information for anyone attempting to increase their JavaScript knowledge.
 
-Link to the deployed website: https://vik-maharaj.github.io/password-generator/
+Link to the deployed website: https://vik-maharaj.github.io/code-quiz/
 
 
 ## Installation
