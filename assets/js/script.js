@@ -222,16 +222,12 @@ quit_quiz.onclick = function() {
 }
 
 
+
+// brings up the scoreboard window
 scoreboard_start.onclick = function() {
-    // info_box.classList.add("active");
-    // quiz_box.classList.add("active");
     result_box.classList.remove("active");
     scoreboard_window.classList.add("active");
-    console.log("scoreboard pops up")
 }
-
-
-
 
 
 

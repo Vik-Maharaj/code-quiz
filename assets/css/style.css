@@ -304,8 +304,16 @@ footer .next_btn:hover {
 
 
 
+.scoreboard_btn {
+  background-color: #494D5F;
+  color: #494D5F;
+}
 
 
+.scoreboard_btn:hover {
+  background: #D0BDF4;
+  box-shadow: -.5px 2px 5px 1px #494D5F
+}
 
 
 
@@ -328,8 +336,22 @@ footer .next_btn:hover {
 }
 
 
+.name_prompt {
+  font-weight: bold;
+}
+
 .scoreboard_window .leaderboard li {
   list-style-type: none;
+  font-weight: 600;
+  background: #93d5f1;
+  border: 1px solid #A0D2E8;
+  border-radius: 5px;
+  padding: 8px 15px;
+  margin-top: 15px;
+  margin-bottom: 7px;
+  align-items: center;
+  box-shadow: -.5px 2px 3px 1px #494D5F;
+  transition: all 0.2s ease;
 }
 
 
@@ -370,11 +392,34 @@ footer .next_btn:hover {
 }
 
 
+#save_score_btn {
+  box-shadow: 0px 4px 8px 0 #494D5F;
+  font-size: 20px;
+  font-weight: bold;
+  color: #494D5F;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  border-top: 1px solid #494D5F;
+  font-family: 'Staatliches', sans-serif;
+  height: 40px;
+  width: 120px;
+  border: 1px solid #A0D2E8;
+  margin-bottom: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
 
 
+#save_score_btn:hover {
+  background: #D0BDF4;
+  box-shadow: -.5px 2px 5px 1px #494D5F;
+}
 
 
-
+#player_name_input {
+  background-color: #A0D2E8;
+}
 
 
 
