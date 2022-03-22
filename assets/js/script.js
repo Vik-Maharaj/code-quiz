@@ -10,6 +10,8 @@ const next_btn = document.querySelector(".next_btn");
 const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
+const scoreboard_start = result_box.querySelector(".buttons .scoreboard_btn");
+const scoreboard_window = document.querySelector(".scoreboard_window");
 
 
 
@@ -219,6 +221,61 @@ quit_quiz.onclick = function() {
     window.location.reload();
 }
 
+
+scoreboard_start.onclick = function() {
+    // info_box.classList.add("active");
+    // quiz_box.classList.add("active");
+    result_box.classList.remove("active");
+    scoreboard_window.classList.add("active");
+    console.log("scoreboard pops up")
+}
+
+
+
+
+
+
+// declared variables for storing scores
+var element = document.getElementById("save_score_btn");
+var firstPlace = document.querySelector('#first_place');
+var secondPlace = document.querySelector('#second_place');
+var thirdPlace = document.querySelector('#third_place');
+var fourthPlace = document.querySelector('#fourth_place');
+var fifthPlace = document.querySelector('#fifth_place');
+
+
+element.addEventListener('click', scoreSave);
+
+
+
+function scoreSave(event) {
+    var playerName = document.querySelector("#player_name_input").value;
+      var playerScore = {
+      player: playerName,
+      score: userScore * 100,
+      }
+    localStorage.setItem('playerScore', JSON.stringify([playerScore]));
+    savedScores.push(playerScore);
+    localStorage.setItem('playerScore', JSON.stringify(savedScores))
+    location.reload()
+}
+  
+
+var savedScores = JSON.parse(localStorage.getItem('playerScore')); 
+
+
+if (savedScores === null) {savedScores = [];}
+
+  
+savedScores.sort(function(a, b){return b.score-a.score});
+  
+  
+// prints values to the scoreboard
+firstPlace.textContent = (`${savedScores[0].player} -- ${savedScores[0].score} points`)
+secondPlace.textContent = (`${savedScores[1].player} -- ${savedScores[1].score} points`)
+thirdPlace.textContent = (`${savedScores[2].player} -- ${savedScores[2].score} points`)
+fourthPlace.textContent = (`${savedScores[3].player} -- ${savedScores[3].score} points`)
+fifthPlace.textContent = (`${savedScores[4].player} -- ${savedScores[4].score} points`)
 
 
 

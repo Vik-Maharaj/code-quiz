@@ -14,7 +14,7 @@ body {
 
 }
 
-.start_btn, .info_box, .quiz_box, .result_box {
+.start_btn, .info_box, .quiz_box, .result_box, .scoreboard_window {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -301,6 +301,82 @@ footer .next_btn:hover {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+
+
+
+
+
+
+
+
+.scoreboard_window.active {
+  display: block;
+}
+
+
+.scoreboard_window {
+  background: #f0f2f7;
+  width: 450px;
+  padding: 25px 30px;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+
+.scoreboard_window .leaderboard li {
+  list-style-type: none;
+}
+
+
+.scoreboard_window .complete_text {
+  font-size: 17px;
+  font-weight: 500;
+  font-style: italic;
+  margin: 10px;
+}
+
+.scoreboard_window .score_text {
+  /* display: flex; */
+  text-align: center;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.scoreboard_window .buttons {
+  display: block;
+  align-items: center;
+  padding: 20px 10px;
+  margin: 20px 0;
+}
+
+.scoreboard_window .buttons button {
+  margin: 0 10px;
+  height: 45px;
+  padding: 0 20px;
+  border:  none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #A0D2E8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 690px) {
