@@ -2,15 +2,15 @@
 
 ## Description
 
-JavaScript is important, very important, and as new students to the language attempt to learn it, it is helpful to utilize any resource at their disposal. With that in mind, the purpose of this project is to create a quiz app on JavaScript history and fundamentals. The timed web-based quiz can be taken by anyone online and the program includes the following features:
+JavaScript is important, very important, and as new students attempt to learn the language, it is helpful for them to utilize any resource at their disposal. With that in mind, the purpose of this project is to create a quiz app on JavaScript history and fundamentals. The timed web-based quiz can be taken by anyone online and the program includes the following features:
 
 - The quiz is entirely online and can be taken repeatedly
-- It is multiple choice and has several choices that displays the right or wrong answer depending on the user choice
-- Once the quiz begins a timer starts to count down from 75 seconds, and once the counter reaches 0, the quiz is over
+- It is multiple choice and has several possible options that displays the right or wrong answer depending on the user choice
+- Once the quiz begins, a timer starts to count down from 75 seconds, and once the counter reaches 0, the quiz is over
 - Once a question is answered, the user is prompted to move to the next answer
-- The user earns 100 points for each answer and the point total is shown at the bottom of the window
+- The user earns 100 points for each answer and the running point total is shown at the bottom of the window
 - Once the quiz is over the points are totaled and displayed to the user
-- The user can save their score along with their initials, while a list of high scores are displayed for comparison or inclusion (functionality coming soon)
+- The user can save their name and score to local storage, while a list of sorted high scores (also saved on local storage) are displayed
 
 This quiz, although a simple and straightforward resource, will hopefully provide some new information for anyone attempting to increase their JavaScript knowledge.
 
